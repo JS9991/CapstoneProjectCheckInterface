@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Eligibility Check</title>
+    <link rel="stylesheet" href="checkinterface.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Visa Application System</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Eligibility Check</a></li>
+                <li><a href="#">Apply for Visa</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+    </header>
+    <main>
+        <section class="eligibility-check">
+            <h1>Check Your Visa Eligibility</h1>
+            <p>Find out if you are eligible to apply for a visa.</p>
+            <form id="eligibility-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="citizenship">Country of Citizenship:</label>
+                    <select id="citizenship" name="citizenship" required>
+                        <!-- Options will go here -->
+                    </select>
+                    
+                    <label for="residence">Country of Destination:</label>
+                    <select id="residence" name="residence" required>
+                        <!-- Options will go here -->
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Travel Information</legend>
+                    <label for="purpose">Purpose of Visit:</label>
+                    <select id="purpose" name="purpose" required>
+                        <!-- Options will go here -->
+                    </select>
+                    
+                    <label for="duration">Intended Duration of Stay:</label>
+                    <input type="text" id="duration" name="duration" required>
+                    
+                    <label>Previous Visits in this country:</label>
+                    <input type="radio" id="previous-yes" name="previous-visits" value="yes">
+                    <label for="previous-yes">Yes</label>
+                    <input type="radio" id="previous-no" name="previous-visits" value="no">
+                    <label for="previous-no">No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label>Criminal Record:</label>
+                    <input type="radio" id="criminal-yes" name="criminal-record" value="yes">
+                    <label for="criminal-yes">Yes</label>
+                    <input type="radio" id="criminal-no" name="criminal-record" value="no">
+                    <label for="criminal-no">No</label>
+                    
+                    <label>Medical Conditions:</label>
+                    <input type="radio" id="medical-yes" name="medical-conditions" value="yes">
+                    <label for="medical-yes">Yes</label>
+                    <input type="radio" id="medical-no" name="medical-conditions" value="no">
+                    <label for="medical-no">No</label>
+                    
+                    <label for="employment">Employment Status:</label>
+                    <select id="employment" name="employment" required>
+                        <!-- Options will go here -->
+                    </select>
+                    
+                    <label for="income">Annual Income:</label>
+                    <input type="text" id="income" name="income" required>
+                </fieldset>
+                <button type="submit">Check Eligibility</button>
+            </form>
+            <div id="results">
+                <!-- Eligibility results will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Help Center</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: contact@visa-system.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Visa Street, City, Country</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
